@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ToolLocation_txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Tool installed on Stationary or Movable machine?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/toolLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ToolLocation_txt">
+
+        <RadioButton
+            android:id="@+id/rbStationary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stationary" />
+
+        <RadioButton
+            android:id="@+id/rbMovable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Movable" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sweedDiaLocation_txt"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Sweep diameter is inside or outside?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolLocation" />
+
+    <RadioGroup
+        android:id="@+id/sweedDiaLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sweedDiaLocation_txt">
+
+        <RadioButton
+            android:id="@+id/rbInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inside" />
+
+        <RadioButton
+            android:id="@+id/rbOutside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outside" />
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sweedDiaLocation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

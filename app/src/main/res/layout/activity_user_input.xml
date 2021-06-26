@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".UserInput">
+
+    <ScrollView
+        android:id="@+id/inp_side_scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/txt_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/inp_span_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:text="SPAN of movable (mm or in): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/inp_span_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_span_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_span_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_span_txt" />
+
+            <TextView
+                android:id="@+id/inp_face_dia_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Face diameter (mm or in): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_span_txt" />
+
+            <EditText
+                android:id="@+id/inp_face_dia_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_face_dia_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_face_dia_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_face_dia_txt" />
+
+            <TextView
+                android:id="@+id/inp_OH_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Movable overhang (mm or in): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_face_dia_txt" />
+
+            <EditText
+                android:id="@+id/inp_OH_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_OH_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_OH_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_OH_txt" />
+
+            <TextView
+                android:id="@+id/inp_BBT_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Bore target (um or thou): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_OH_txt" />
+
+            <EditText
+                android:id="@+id/inp_BBT_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_BBT_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_BBT_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_BBT_txt" />
+
+            <TextView
+                android:id="@+id/inp_FBT_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Face target (um or thou): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_BBT_txt" />
+
+            <EditText
+                android:id="@+id/inp_FBT_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_FBT_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_FBT_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_FBT_txt" />
+
+            <TextView
+                android:id="@+id/inp_BBR_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Bore readings (um or thou): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_FBT_txt" />
+
+            <EditText
+                android:id="@+id/inp_BBR_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_BBR_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_BBR_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_BBR_txt" />
+
+            <TextView
+                android:id="@+id/inp_FBR_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Face readings (um or thou): "
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_BBR_txt" />
+
+            <EditText
+                android:id="@+id/inp_FBR_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                app:layout_constraintBottom_toBottomOf="@id/inp_FBR_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_FBR_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_FBR_txt" />
+
+            <TextView
+                android:id="@+id/inp_spacing_txt"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Machine spacing (mm or in): "
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/inp_FBR_txt" />
+
+            <EditText
+                android:id="@+id/inp_spacing_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ems="10"
+                android:inputType="numberSigned|numberDecimal"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@id/inp_spacing_txt"
+                app:layout_constraintStart_toEndOf="@id/inp_spacing_txt"
+                app:layout_constraintTop_toTopOf="@id/inp_spacing_txt" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"
+        android:text="Calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnAct2Backto1"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCalculate"
+        app:layout_constraintStart_toEndOf="@id/btnCalculate"
+        app:layout_constraintTop_toTopOf="@id/btnCalculate" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="80dp"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAct2Backto1"
+        app:srcCompat="@drawable/almnt" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

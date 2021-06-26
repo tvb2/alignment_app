@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Side_input">
+
+        <ScrollView
+            android:id="@+id/inp_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/txt_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/inp_span_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="SPAN of movable (mm or in): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/inp_span_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_span_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_span_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_span_txt" />
+
+                <TextView
+                    android:id="@+id/inp_face_dia_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Face diameter (mm or in): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_span_txt" />
+
+                <EditText
+                    android:id="@+id/inp_face_dia_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_face_dia_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_face_dia_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_face_dia_txt" />
+
+                <TextView
+                    android:id="@+id/inp_OH_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Movable overhang (mm or in): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_face_dia_txt" />
+
+                <EditText
+                    android:id="@+id/inp_OH_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_OH_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_OH_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_OH_txt" />
+
+                <TextView
+                    android:id="@+id/inp_3BT_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Bore 3o'clock target (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_OH_txt" />
+
+                <EditText
+                    android:id="@+id/inp_3BT_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_3BT_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_3BT_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_3BT_txt" />
+
+                <TextView
+                    android:id="@+id/inp_9BT_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Bore 9o'clock target (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_3BT_txt" />
+
+                <EditText
+                    android:id="@+id/inp_9BT_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_9BT_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_9BT_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_9BT_txt" />
+
+                <TextView
+                    android:id="@+id/inp_3BR_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Bore 3o'clock readings (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_9BT_txt" />
+
+                <EditText
+                    android:id="@+id/inp_3BR_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_3BR_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_3BR_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_3BR_txt" />
+
+                <TextView
+                    android:id="@+id/inp_9BR_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Bore 9o'clock readings (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_3BR_txt" />
+
+                <EditText
+                    android:id="@+id/inp_9BR_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_9BR_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_9BR_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_9BR_txt" />
+
+                <TextView
+                    android:id="@+id/inp_3FT_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Face 3o'clock target (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_9BR_txt" />
+
+                <EditText
+                    android:id="@+id/inp_3FT_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_3FT_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_3FT_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_3FT_txt" />
+
+                <TextView
+                    android:id="@+id/inp_3FR_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Face 3o'clock readings (um or thou): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_3FT_txt" />
+
+                <EditText
+                    android:id="@+id/inp_3FR_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    app:layout_constraintBottom_toBottomOf="@+id/inp_3FR_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_3FR_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_3FR_txt" />
+
+                <TextView
+                    android:id="@+id/inp_spacing_txt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:visibility="gone"
+                    android:text="Machine spacing (mm or in): "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/inp_3FR_txt" />
+
+                <EditText
+                    android:id="@+id/inp_spacing_val"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:ems="10"
+                    android:inputType="numberSigned|numberDecimal"
+                    android:text="0"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@id/inp_spacing_txt"
+                    app:layout_constraintStart_toEndOf="@id/inp_spacing_txt"
+                    app:layout_constraintTop_toTopOf="@id/inp_spacing_txt" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+    <Button
+                android:id="@+id/btnCalculate"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="300dp"
+                android:text="Calculate"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <Button
+                android:id="@+id/btnAct2Backto1"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="Back"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCalculate"
+                app:layout_constraintStart_toEndOf="@id/btnCalculate"
+                app:layout_constraintTop_toTopOf="@id/btnCalculate" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginStart="80dp"
+
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnAct2Backto1"
+                app:srcCompat="@drawable/almnt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
