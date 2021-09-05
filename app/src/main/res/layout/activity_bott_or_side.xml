@@ -13,7 +13,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:text="Select type of calculation: 'Side-to-side' or 'Bore and face bottom'"
+        android:text="Select type of calculation: 'Vertical' or 'Horizontal'"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,13 +30,13 @@
             android:id="@+id/rb_StoS"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Side-to-side" />
+            android:text="Horizontal alignment" />
 
         <RadioButton
             android:id="@+id/rb_F_B_bott"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Face and Bore bottom" />
+            android:text="Vertical alignment" />
     </RadioGroup>
 
     <Button
