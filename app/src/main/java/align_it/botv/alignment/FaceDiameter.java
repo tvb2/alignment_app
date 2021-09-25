@@ -83,12 +83,13 @@ public class FaceDiameter extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 //see if user checked box to use new targets for face bottom and face 3 o'clock
-                if (ck_box_use_new_FT.isChecked())
+                if (ck_box_use_new_FT.isChecked()) {
                     //update database values with new calculated targets and measured face diameter
-                    facedia_s=String.valueOf(facedia_new);
-                    data.edit().putString(APP_PREFERENCES_FACEDIA,facedia_s).apply();
-                    data.edit().putString(APP_PREFERENCES_3FT,res_new_f3t_s).apply();
-                    data.edit().putString(APP_PREFERENCES_FBT,res_new_fbt_s).apply();
+                    facedia_s = String.valueOf(facedia_new);
+                    data.edit().putString(APP_PREFERENCES_FACEDIA, facedia_s).apply();
+                    data.edit().putString(APP_PREFERENCES_3FT, res_new_f3t_s).apply();
+                    data.edit().putString(APP_PREFERENCES_FBT, res_new_fbt_s).apply();
+                }
                 //Return to previous page (Bott_or_side)
                 Intent intent = new Intent(getApplicationContext(),Bott_or_side.class);
                 startActivity(intent);
