@@ -29,7 +29,7 @@ import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_TNA;
 import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_config;
 import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_delta1;
 import static java.lang.Double.*;
-
+//Input data for Vertical (bottom bore&face) alignment calculation
 public class UserInput extends AppCompatActivity {
     Button btnAct2Backto1, btnCalculate;
     TextView inp_spacing_txt;

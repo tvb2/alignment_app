@@ -41,10 +41,16 @@ public class Bott_or_side extends AppCompatActivity {
                         Intent intent1=new Intent(Bott_or_side.this, Side_input.class);
                         intent1.putExtra("config", config);
                         startActivity(intent1);
-                    }else{
+                    }
+                    if (select==2){
                         Intent intent2=new Intent(Bott_or_side.this, UserInput.class);
                         intent2.putExtra("config", config);
                         startActivity(intent2);
+                    }
+                    if (select==3){
+                        Intent intent3=new Intent(Bott_or_side.this, FaceDiameter.class);
+                        intent3.putExtra("config", config);
+                        startActivity(intent3);
                     }
                 }
             }
@@ -64,6 +70,9 @@ public class Bott_or_side extends AppCompatActivity {
                 break;
             case R.id.rb_F_B_bott:
                 select=2;//Bottom
+                break;
+            case R.id.rb_F_Dia_optn:
+                select=3;//Different Face diameter option
                 break;
             default:
                 break;

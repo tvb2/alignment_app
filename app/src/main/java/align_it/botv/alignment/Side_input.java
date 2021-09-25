@@ -34,7 +34,7 @@ import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_TFA;
 import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_TNA;
 import static align_it.botv.alignment.MainActivity.APP_PREFERENCES_config;
 import static java.lang.Double.*;
-
+//Input data for horizontal (side-to-side) alignment
 public class Side_input extends AppCompatActivity {
     EditText inp_span_val, inp_face_dia_val, inp_oh_val, inp_spacing_val, inp_3BT_val, inp_9BT_val,inp_3FT_val,inp_3BR_val,inp_9BR_val,inp_3FR_val;
     TextView inp_spacing_txt;

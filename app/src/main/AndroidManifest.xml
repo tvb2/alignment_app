@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Alignment">
-        <activity android:name=".Results_side"></activity>
+        <activity
+            android:name=".FaceDiameter"
+            android:exported="true"
+            android:label="@string/title_activity_face_diameter"
+            android:theme="@style/Theme.Alignment.NoActionBar" />
+        <activity android:name=".Results_side" />
         <activity android:name=".Side_input" />
         <activity android:name=".Bott_or_side" />
         <activity android:name=".Login">

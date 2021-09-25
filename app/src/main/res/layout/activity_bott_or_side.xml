@@ -13,7 +13,7 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:text="Select type of calculation: 'Vertical' or 'Horizontal'"
+        android:text="Select type of calculation: 'Vertical' or 'Horizontal' or Face Diameter option if it differs from drawing"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,15 +28,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">>
         <RadioButton
             android:id="@+id/rb_StoS"
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Horizontal alignment" />
 
         <RadioButton
             android:id="@+id/rb_F_B_bott"
-            android:layout_width="150dp"
+            android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Vertical alignment" />
+
+        <RadioButton
+            android:id="@+id/rb_F_Dia_optn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Different Face Diameter" />
     </RadioGroup>
 
     <Button
